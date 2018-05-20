@@ -62,7 +62,7 @@ def all_supplies_in_holidays(holiday_hash)
     holiday.each do |holiday, items|
       new_string = ""
       temp = holiday.to_s
-      if temp.includes?("_")
+      if temp.include?("_")
         temp = temp.split("_")
       end
       if temp.length > 1 
