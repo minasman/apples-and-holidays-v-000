@@ -69,7 +69,7 @@ def all_supplies_in_holidays(holiday_hash)
       else
         temp = temp.capitalize
       end
-      binding.pry 
+      #binding.pry 
       new_string += "  #{temp}: "
       i = 0 
       while i < items.length - 1 
