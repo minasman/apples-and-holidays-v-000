@@ -67,7 +67,7 @@ def all_supplies_in_holidays(holiday_hash)
         temp.map {|word| word.capitalize}
         temp.join(" ")
       else
-        temp.capitalize
+        temp = temp.capitalize
       end
       binding.pry 
       new_string += "  #{temp}: "
