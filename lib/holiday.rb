@@ -64,7 +64,7 @@ def all_supplies_in_holidays(holiday_hash)
       new_string += "  #{holiday.capitalize}: "
       i = 0 
       while i < items.length - 1 
-        new_string += "#{items[i]},"
+        new_string += "#{items[i]}, "
         i +=1
       end
       new_string += items[items.length - 1]
