@@ -65,6 +65,7 @@ def all_supplies_in_holidays(holiday_hash)
       if temp.include?("_")
         temp = temp.split("_")
       end
+      binding.pry
       if temp.length > 1 
         temp.map {|word| word.capitalize}
         temp.join(" ")
@@ -96,9 +97,23 @@ def all_holidays_with_bbq(holiday_hash)
   bbq_holiday
 end
 
+holiday_hash = {
+     :winter => {
+       :christmas => ["Lights", "Wreath"],
+       :new_years => ["Party Hats"]
+     },
+     :summer => {
+       :fourth_of_july => ["Fireworks", "BBQ"]
+     },
+     :fall => {
+       :thanksgiving => ["Turkey"]
+    },
+    :spring => {
+       :memorial_day => ["BBQ"]
+     }
+   }
 
 
-
-#all_supplies_in_holidays(holiday_hash)
+all_supplies_in_holidays(holiday_hash)
 
 
